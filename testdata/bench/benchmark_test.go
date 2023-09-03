@@ -5,14 +5,14 @@ import (
 	"testing"
 )
 
-func BenchmarkA(b *testing.B) {
+func BenchmarkTestA(b *testing.B) {
 	str := ""
 	for i := 0; i < b.N; i++ {
 		str += "a"
 	}
 }
 
-func BenchmarkB(b *testing.B) {
+func BenchmarkTestB(b *testing.B) {
 	str := ""
 	for i := 0; i < b.N; i++ {
 		str = fmt.Sprintf("%s%s", str, "a")
