@@ -26,13 +26,17 @@ import (
 	"errors"
 	"fmt"
 	"os"
+	"regexp"
 
 	gotestbench "github.com/k1LoW/octocov-go-test-bench"
 	"github.com/k1LoW/octocov-go-test-bench/version"
+	"github.com/k1LoW/octocov/report"
 	"github.com/mattn/go-isatty"
 	"github.com/spf13/cobra"
 	"golang.org/x/tools/benchmark/parse"
 )
+
+var targets []string
 
 var rootCmd = &cobra.Command{
 	Use:   "octocov-go-test-bench",
@@ -60,6 +64,21 @@ var rootCmd = &cobra.Command{
 			return err
 		}
 		cset := gotestbench.Convert(set)
+		if len(targets) > 0 {
+			filtered := []*report.CustomMetricSet{}
+			for _, t := range targets {
+				re, err := regexp.Compile(t)
+				if err != nil {
+					return err
+				}
+				for _, cs := range cset {
+					if re.MatchString(cs.Key) {
+						filtered = append(filtered, cs)
+					}
+				}
+			}
+			cset = filtered
+		}
 		if len(cset) == 0 {
 			return errors.New("no benchmarks found")
 		}
@@ -82,4 +101,5 @@ func Execute() {
 
 func init() {
 	rootCmd.Flags().BoolP("version", "v", false, "print the version")
+	rootCmd.Flags().StringSliceVarP(&targets, "target", "t", []string{}, "target benchmark name")
 }
