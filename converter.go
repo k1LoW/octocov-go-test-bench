@@ -25,28 +25,42 @@ func Convert(set parse.Set) []*report.CustomMetricSet {
 				Key:  bench.Name,
 			}
 			cs.Metrics = append(cs.Metrics, &report.CustomMetric{
-				Name:  "N",
+				Name:  "Number of iterations",
 				Key:   "N",
 				Value: float64(bench.N),
 			})
-			cs.Metrics = append(cs.Metrics, &report.CustomMetric{
-				Name:  "ns/op",
-				Key:   "NsPerOp",
-				Value: float64(bench.NsPerOp),
-				Unit:  "ns/op",
-			})
-			cs.Metrics = append(cs.Metrics, &report.CustomMetric{
-				Name:  "B/op",
-				Key:   "AllocedBytesPerOp",
-				Value: float64(bench.AllocedBytesPerOp),
-				Unit:  "B/op",
-			})
-			cs.Metrics = append(cs.Metrics, &report.CustomMetric{
-				Name:  "allocs/op",
-				Key:   "AllocsPerOp",
-				Value: float64(bench.AllocsPerOp),
-				Unit:  "allocs/op",
-			})
+			if (bench.Measured & parse.NsPerOp) != 0 {
+				cs.Metrics = append(cs.Metrics, &report.CustomMetric{
+					Name:  "Nanoseconds per iteration",
+					Key:   "NsPerOp",
+					Value: float64(bench.NsPerOp),
+					Unit:  "ns/op",
+				})
+			}
+			if (bench.Measured & parse.MBPerS) != 0 {
+				cs.Metrics = append(cs.Metrics, &report.CustomMetric{
+					Name:  "MB processed per second",
+					Key:   "MBPerS",
+					Value: float64(bench.MBPerS),
+					Unit:  "MB/s",
+				})
+			}
+			if (bench.Measured & parse.AllocedBytesPerOp) != 0 {
+				cs.Metrics = append(cs.Metrics, &report.CustomMetric{
+					Name:  "Bytes allocated per iteration",
+					Key:   "AllocedBytesPerOp",
+					Value: float64(bench.AllocedBytesPerOp),
+					Unit:  "B/op",
+				})
+			}
+			if (bench.Measured & parse.AllocsPerOp) != 0 {
+				cs.Metrics = append(cs.Metrics, &report.CustomMetric{
+					Name:  "Allocs per iteration",
+					Key:   "AllocsPerOp",
+					Value: float64(bench.AllocsPerOp),
+					Unit:  "allocs/op",
+				})
+			}
 			cset = append(cset, cs)
 		}
 	}

@@ -25,6 +25,7 @@ func TestConverter(t *testing.T) {
 						NsPerOp:           100,
 						AllocedBytesPerOp: 25,
 						AllocsPerOp:       50,
+						Measured:          parse.NsPerOp | parse.AllocedBytesPerOp | parse.AllocsPerOp,
 					},
 				},
 			},
@@ -33,10 +34,33 @@ func TestConverter(t *testing.T) {
 					Name: "Benchmark-0",
 					Key:  "Benchmark-0",
 					Metrics: []*report.CustomMetric{
-						{Name: "N", Key: "N", Value: 1},
-						{Name: "ns/op", Key: "NsPerOp", Value: 100, Unit: "ns/op"},
-						{Name: "B/op", Key: "AllocedBytesPerOp", Value: 25, Unit: "B/op"},
-						{Name: "allocs/op", Key: "AllocsPerOp", Value: 50, Unit: "allocs/op"},
+						{Name: "Number of iterations", Key: "N", Value: 1},
+						{Name: "Nanoseconds per iteration", Key: "NsPerOp", Value: 100, Unit: "ns/op"},
+						{Name: "Bytes allocated per iteration", Key: "AllocedBytesPerOp", Value: 25, Unit: "B/op"},
+						{Name: "Allocs per iteration", Key: "AllocsPerOp", Value: 50, Unit: "allocs/op"},
+					},
+				},
+			},
+		},
+		{
+			parse.Set{
+				"Benchmark-0": []*parse.Benchmark{
+					{
+						Name:              "Benchmark-0",
+						N:                 1,
+						NsPerOp:           100,
+						AllocedBytesPerOp: 25,
+						AllocsPerOp:       50,
+						Measured:          0,
+					},
+				},
+			},
+			[]*report.CustomMetricSet{
+				{
+					Name: "Benchmark-0",
+					Key:  "Benchmark-0",
+					Metrics: []*report.CustomMetric{
+						{Name: "Number of iterations", Key: "N", Value: 1},
 					},
 				},
 			},
