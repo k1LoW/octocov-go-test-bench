@@ -9,7 +9,7 @@ import (
 	"golang.org/x/tools/benchmark/parse"
 )
 
-type BenchGroup struct {
+type benchGroup struct {
 	key    string
 	benchs []*parse.Benchmark
 	n      int
@@ -28,12 +28,12 @@ func Convert(set parse.Set) []*report.CustomMetricSet {
 			continue
 		}
 		var names []string
-		g := map[string]*BenchGroup{}
+		g := map[string]*benchGroup{}
 		for _, b := range benchs {
 			names = append(names, b.Name)
 			bg, ok := g[b.Name]
 			if !ok {
-				g[b.Name] = &BenchGroup{
+				g[b.Name] = &benchGroup{
 					key:    b.Name,
 					benchs: []*parse.Benchmark{b},
 					n:      1,
