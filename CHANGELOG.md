@@ -1,5 +1,9 @@
 # Changelog
 
+## [v0.3.0](https://github.com/k1LoW/octocov-go-test-bench/compare/v0.2.0...v0.3.0) - 2023-09-03
+### New Features 🎉
+- If the names are the same, take the average by @k1LoW in https://github.com/k1LoW/octocov-go-test-bench/pull/6
+
 ## [v0.2.0](https://github.com/k1LoW/octocov-go-test-bench/compare/v0.1.0...v0.2.0) - 2023-09-03
 ### Other Changes
 - Use only measured metrics. by @k1LoW in https://github.com/k1LoW/octocov-go-test-bench/pull/5
