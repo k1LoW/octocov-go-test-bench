@@ -70,7 +70,7 @@ nfpms:
       - octocov-go-test-bench-linux
     homepage: https://github.com/k1LoW/calver
     maintainer: Ken'ichiro Oyama <k1lowxb@gmail.com>
-    description: "Generate custom metrics JSON from the output of `go test -bench`."
+    description: "Generate octocov custom metrics JSON from the output of `go test -bench`."
     license: MIT
     formats:
       - deb

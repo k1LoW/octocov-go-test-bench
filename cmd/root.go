@@ -36,8 +36,8 @@ import (
 
 var rootCmd = &cobra.Command{
 	Use:   "octocov-go-test-bench",
-	Short: "Generate custom metrics JSON from the output of 'go test -bench'",
-	Long:  `Generate custom metrics JSON from the output of 'go test -bench'.`,
+	Short: "Generate octocov custom metrics JSON from the output of 'go test -bench'",
+	Long:  `Generate octocov custom metrics JSON from the output of 'go test -bench'.`,
 	Args: func(cmd *cobra.Command, args []string) error {
 		versionVal, err := cmd.Flags().GetBool("version")
 		if err != nil {
