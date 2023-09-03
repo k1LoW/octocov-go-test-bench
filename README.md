@@ -1,4 +1,4 @@
-# octocov-go-test-bench
+# octocov-go-test-bench [![CI](https://github.com/k1LoW/octocov-go-test-bench/actions/workflows/ci.yml/badge.svg)](https://github.com/k1LoW/octocov-go-test-bench/actions/workflows/ci.yml) ![Coverage](https://raw.githubusercontent.com/k1LoW/octocovs/main/badges/k1LoW/octocov-go-test-bench/coverage.svg) ![Code to Test Ratio](https://raw.githubusercontent.com/k1LoW/octocovs/main/badges/k1LoW/octocov-go-test-bench/ratio.svg) ![Test Execution Time](https://raw.githubusercontent.com/k1LoW/octocovs/main/badges/k1LoW/octocov-go-test-bench/time.svg)
 
 Generate custom metrics JSON from the output of `go test -bench`.
 
