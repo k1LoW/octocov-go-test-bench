@@ -1,0 +1,80 @@
+before:
+  hooks:
+    - go mod download
+    - go mod tidy
+builds:
+  -
+    id: octocov-go-test-bench-darwin
+    ldflags:
+      - -s -w -X github.com/k1LoW/octocov-go-test-bench.version={{.Version}} -X github.com/k1LoW/octocov-go-test-bench.commit={{.FullCommit}} -X github.com/k1LoW/octocov-go-test-bench.date={{.Date}} -X github.com/k1LoW/octocov-go-test-bench/version.Version={{.Version}}
+    env:
+      - CGO_ENABLED=0
+    goos:
+      - darwin
+    goarch:
+      - amd64
+      - arm64
+    main: ./cmd/octocov-go-test-bench/main.go
+  -
+    id: octocov-go-test-bench-windows
+    ldflags:
+      - -s -w -X github.com/k1LoW/octocov-go-test-bench.version={{.Version}} -X github.com/k1LoW/octocov-go-test-bench.commit={{.FullCommit}} -X github.com/k1LoW/octocov-go-test-bench.date={{.Date}} -X github.com/k1LoW/octocov-go-test-bench/version.Version={{.Version}}
+    env:
+      - CGO_ENABLED=0
+    goos:
+      - windows
+    goarch:
+      - amd64
+    main: ./cmd/octocov-go-test-bench/main.go
+  -
+    id: octocov-go-test-bench-linux
+    ldflags:
+      - -s -w -X github.com/k1LoW/octocov-go-test-bench.version={{.Version}} -X github.com/k1LoW/octocov-go-test-bench.commit={{.FullCommit}} -X github.com/k1LoW/octocov-go-test-bench.date={{.Date}} -X github.com/k1LoW/octocov-go-test-bench/version.Version={{.Version}}
+    env:
+      - CGO_ENABLED=0
+    goos:
+      - linux
+    goarch:
+      - amd64
+      - arm64
+    main: ./cmd/octocov-go-test-bench/main.go
+archives:
+  -
+    id: octocov-go-test-bench-archive
+    name_template: '{{ .ProjectName }}_v{{ .Version }}_{{ .Os }}_{{ .Arch }}{{ if .Arm }}v{{ .Arm }}{{ end }}'
+    format_overrides:
+      - goos: darwin
+        format: zip
+    files:
+      - LICENSE
+      - CREDITS
+      - README.md
+      - CHANGELOG.md
+    rlcp: true
+checksum:
+  name_template: 'checksums.txt'
+snapshot:
+  name_template: "{{ .Version }}-next"
+changelog:
+  skip: true
+  sort: asc
+  filters:
+    exclude:
+    - '^docs:'
+    - '^test:'
+nfpms:
+  -
+    id: octocov-go-test-bench-nfpms
+    file_name_template: "{{ .ProjectName }}_{{ .Version }}-1_{{ .Arch }}"
+    builds:
+      - octocov-go-test-bench-linux
+    homepage: https://github.com/k1LoW/calver
+    maintainer: Ken'ichiro Oyama <k1lowxb@gmail.com>
+    description: "Generate custom metrics JSON from the output of `go test -bench`."
+    license: MIT
+    formats:
+      - deb
+      - rpm
+      - apk
+    bindir: /usr/bin
+    epoch: 1
