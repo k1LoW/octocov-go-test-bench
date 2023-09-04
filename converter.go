@@ -48,7 +48,7 @@ func Convert(set parse.Set) []*report.CustomMetricSet {
 			bg := g[n]
 			name := n
 			if bg.n > 1 {
-				name = fmt.Sprintf("%s (average of %d)", name, bg.n)
+				name = fmt.Sprintf("%s (average of %d benchmarks)", name, bg.n)
 			}
 			cs := &report.CustomMetricSet{
 				Name: name,

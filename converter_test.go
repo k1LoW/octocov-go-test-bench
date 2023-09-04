@@ -88,7 +88,7 @@ func TestConverter(t *testing.T) {
 			},
 			[]*report.CustomMetricSet{
 				{
-					Name: "Benchmark-0 (average of 2)",
+					Name: "Benchmark-0 (average of 2 benchmarks)",
 					Key:  "Benchmark-0",
 					Metrics: []*report.CustomMetric{
 						{Name: "Number of iterations", Key: "N", Value: 1},
