@@ -1,5 +1,12 @@
 # Changelog
 
+## [v1.1.0](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.0.0...v1.1.0) - 2023-09-04
+### New Features 🎉
+- Add `--tee` option for print stdin to stderr by @k1LoW in https://github.com/k1LoW/octocov-go-test-bench/pull/13
+### Other Changes
+- Add space to unit by @k1LoW in https://github.com/k1LoW/octocov-go-test-bench/pull/10
+- Fix title of average of benchmarks by @k1LoW in https://github.com/k1LoW/octocov-go-test-bench/pull/11
+
 ## [v1.0.0](https://github.com/k1LoW/octocov-go-test-bench/compare/v0.3.0...v1.0.0) - 2023-09-03
 ### New Features 🎉
 - Add `--target` option by @k1LoW in https://github.com/k1LoW/octocov-go-test-bench/pull/9
