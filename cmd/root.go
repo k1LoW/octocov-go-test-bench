@@ -25,6 +25,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"io"
 	"os"
 	"regexp"
 
@@ -36,7 +37,10 @@ import (
 	"golang.org/x/tools/benchmark/parse"
 )
 
-var targets []string
+var (
+	tee     bool
+	targets []string
+)
 
 var rootCmd = &cobra.Command{
 	Use:   "octocov-go-test-bench",
@@ -59,7 +63,11 @@ var rootCmd = &cobra.Command{
 		return nil
 	},
 	RunE: func(cmd *cobra.Command, args []string) error {
-		set, err := parse.ParseSet(os.Stdin)
+		var in io.Reader = os.Stdin
+		if tee {
+			in = io.TeeReader(os.Stdin, os.Stderr)
+		}
+		set, err := parse.ParseSet(in)
 		if err != nil {
 			return err
 		}
@@ -101,5 +109,6 @@ func Execute() {
 
 func init() {
 	rootCmd.Flags().BoolP("version", "v", false, "print the version")
-	rootCmd.Flags().StringSliceVarP(&targets, "target", "t", []string{}, "target benchmark name")
+	rootCmd.Flags().BoolVarP(&tee, "tee", "", false, "print stdin to stderr")
+	rootCmd.Flags().StringSliceVarP(&targets, "target", "", []string{}, "target benchmark name")
 }
