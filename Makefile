@@ -19,7 +19,7 @@ test:
 	go test ./... -coverprofile=coverage.out -covermode=count
 
 test-integration:
-	go test -bench Benchmark -benchtime=1ms -benchmem -mod=mod ./testdata/bench -count 2 | go run ./cmd/octocov-go-test-bench/main.go > custom_metrics_bench.json
+	go test -bench Benchmark -benchtime=1ms -benchmem -mod=mod ./testdata/bench -count 2 | go run ./cmd/octocov-go-test-bench/main.go --tee > custom_metrics_bench.json
 
 lint:
 	golangci-lint run ./...
