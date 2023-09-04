@@ -69,7 +69,7 @@ func Convert(set parse.Set) []*report.CustomMetricSet {
 					Value: lo.Reduce(bg.benchs, func(agg float64, b *parse.Benchmark, _ int) float64 {
 						return agg + float64(b.NsPerOp)
 					}, 0.0) / float64(bg.n),
-					Unit: "ns/op",
+					Unit: " ns/op",
 				})
 			}
 			if (b.Measured & parse.MBPerS) != 0 {
@@ -79,7 +79,7 @@ func Convert(set parse.Set) []*report.CustomMetricSet {
 					Value: lo.Reduce(bg.benchs, func(agg float64, b *parse.Benchmark, _ int) float64 {
 						return agg + float64(b.MBPerS)
 					}, 0.0) / float64(bg.n),
-					Unit: "MB/s",
+					Unit: " MB/s",
 				})
 			}
 			if (b.Measured & parse.AllocedBytesPerOp) != 0 {
@@ -89,7 +89,7 @@ func Convert(set parse.Set) []*report.CustomMetricSet {
 					Value: lo.Reduce(bg.benchs, func(agg float64, b *parse.Benchmark, _ int) float64 {
 						return agg + float64(b.AllocedBytesPerOp)
 					}, 0.0) / float64(bg.n),
-					Unit: "B/op",
+					Unit: " B/op",
 				})
 			}
 			if (b.Measured & parse.AllocsPerOp) != 0 {
@@ -99,7 +99,7 @@ func Convert(set parse.Set) []*report.CustomMetricSet {
 					Value: lo.Reduce(bg.benchs, func(agg float64, b *parse.Benchmark, _ int) float64 {
 						return agg + float64(b.AllocsPerOp)
 					}, 0.0) / float64(bg.n),
-					Unit: "allocs/op",
+					Unit: " allocs/op",
 				})
 			}
 			cset = append(cset, cs)
