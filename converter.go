@@ -58,7 +58,7 @@ func Convert(set parse.Set) []*report.CustomMetricSet {
 			cs.Metrics = append(cs.Metrics, &report.CustomMetric{
 				Name: "Number of iterations",
 				Key:  "N",
-				Value: lo.Reduce(bg.benchs, func(agg float64, item *parse.Benchmark, _ int) float64 {
+				Value: lo.Reduce(bg.benchs, func(agg float64, b *parse.Benchmark, _ int) float64 {
 					return agg + float64(b.N)
 				}, 0.0) / float64(bg.n),
 			})
