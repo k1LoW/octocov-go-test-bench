@@ -1,5 +1,9 @@
 # Changelog
 
+## [v1.2.0](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.1.0...v1.2.0) - 2023-09-24
+### New Features 🎉
+- Support collecting metadata from benchmark results by @k1LoW in https://github.com/k1LoW/octocov-go-test-bench/pull/14
+
 ## [v1.1.0](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.0.0...v1.1.0) - 2023-09-04
 ### New Features 🎉
 - Add `--tee` option for print stdin to stderr by @k1LoW in https://github.com/k1LoW/octocov-go-test-bench/pull/13
