@@ -1,5 +1,9 @@
 # Changelog
 
+## [v1.3.0](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.2.1...v1.3.0) - 2023-09-24
+### Breaking Changes 🛠
+- Add --statistics option and default to med-by-ns-per-op by @k1LoW in https://github.com/k1LoW/octocov-go-test-bench/pull/18
+
 ## [v1.2.1](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.2.0...v1.2.1) - 2023-09-24
 ### Fix bug 🐛
 - Fix avg calculation of N by @k1LoW in https://github.com/k1LoW/octocov-go-test-bench/pull/16
