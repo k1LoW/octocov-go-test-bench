@@ -40,6 +40,7 @@ import (
 
 var (
 	tee     bool
+	stype   string
 	targets []string
 )
 
@@ -75,7 +76,10 @@ var rootCmd = &cobra.Command{
 			return err
 		}
 		mset := gotestbench.ParseMetadata(buf)
-		cset := gotestbench.Convert(set)
+		cset, err := gotestbench.Convert(set, stype)
+		if err != nil {
+			return err
+		}
 		for _, cs := range cset {
 			cs.Metadata = mset
 		}
@@ -117,5 +121,6 @@ func Execute() {
 func init() {
 	rootCmd.Flags().BoolP("version", "v", false, "print the version")
 	rootCmd.Flags().BoolVarP(&tee, "tee", "", false, "print stdin to stderr")
+	rootCmd.Flags().StringVarP(&stype, "statistics", "", gotestbench.StasticsTypeMedByNsPerOp, fmt.Sprintf("summary statistics type %s", []string{gotestbench.StasticsTypeAvg, gotestbench.StasticsTypeMedByN, gotestbench.StasticsTypeMedByNsPerOp, gotestbench.StasticsTypeMedByMBPerS, gotestbench.StasticsTypeMedByAllocedBytesPerOp, gotestbench.StasticsTypeMedByAllocsPerOp}))
 	rootCmd.Flags().StringSliceVarP(&targets, "target", "", []string{}, "target benchmark name")
 }
