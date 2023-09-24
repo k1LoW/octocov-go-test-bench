@@ -22,6 +22,7 @@ THE SOFTWARE.
 package cmd
 
 import (
+	"bytes"
 	"encoding/json"
 	"errors"
 	"fmt"
@@ -67,11 +68,17 @@ var rootCmd = &cobra.Command{
 		if tee {
 			in = io.TeeReader(os.Stdin, os.Stderr)
 		}
+		buf := new(bytes.Buffer)
+		in = io.TeeReader(in, buf)
 		set, err := parse.ParseSet(in)
 		if err != nil {
 			return err
 		}
+		mset := gotestbench.ParseMetadata(buf)
 		cset := gotestbench.Convert(set)
+		for _, cs := range cset {
+			cs.Metadata = mset
+		}
 		if len(targets) > 0 {
 			filtered := []*report.CustomMetricSet{}
 			for _, t := range targets {
