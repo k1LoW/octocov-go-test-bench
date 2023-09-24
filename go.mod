@@ -4,8 +4,9 @@ go 1.21.0
 
 require (
 	github.com/google/go-cmp v0.5.9
-	github.com/k1LoW/octocov v0.51.1
+	github.com/k1LoW/octocov v0.52.0
 	github.com/mattn/go-isatty v0.0.19
+	github.com/samber/lo v1.38.1
 	github.com/spf13/cobra v1.7.0
 	golang.org/x/tools v0.12.0
 )
@@ -48,7 +49,6 @@ require (
 	github.com/pjbgf/sha1cd v0.2.3 // indirect
 	github.com/rivo/uniseg v0.2.0 // indirect
 	github.com/saintfish/chardet v0.0.0-20230101081208-5e3ef4b5456d // indirect
-	github.com/samber/lo v1.38.1 // indirect
 	github.com/sergi/go-diff v1.1.0 // indirect
 	github.com/shurcooL/githubv4 v0.0.0-20230215024106-420ad0987b9b // indirect
 	github.com/shurcooL/graphql v0.0.0-20220606043923-3cf50f8a0a29 // indirect
