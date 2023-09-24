@@ -12,7 +12,6 @@ import (
 type benchGroup struct {
 	key    string
 	benchs []*parse.Benchmark
-	n      int
 }
 
 const (
