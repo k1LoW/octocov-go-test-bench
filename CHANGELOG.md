@@ -1,5 +1,9 @@
 # Changelog
 
+## [v1.3.1](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.3.0...v1.3.1) - 2023-10-12
+### Other Changes
+- Bump golang.org/x/net from 0.14.0 to 0.17.0 by @dependabot in https://github.com/k1LoW/octocov-go-test-bench/pull/21
+
 ## [v1.3.0](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.2.1...v1.3.0) - 2023-09-24
 ### Breaking Changes 🛠
 - Add --statistics option and default to med-by-ns-per-op by @k1LoW in https://github.com/k1LoW/octocov-go-test-bench/pull/18
