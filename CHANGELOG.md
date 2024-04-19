@@ -1,5 +1,13 @@
 # Changelog
 
+## [v1.3.2](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.3.1...v1.3.2) - 2024-04-19
+### Other Changes
+- Bump golang.org/x/crypto from 0.14.0 to 0.17.0 by @dependabot in https://github.com/k1LoW/octocov-go-test-bench/pull/22
+- Bump github.com/go-git/go-git/v5 from 5.5.2 to 5.11.0 by @dependabot in https://github.com/k1LoW/octocov-go-test-bench/pull/24
+- Bump github.com/cloudflare/circl from 1.3.3 to 1.3.7 by @dependabot in https://github.com/k1LoW/octocov-go-test-bench/pull/25
+- Bump google.golang.org/protobuf from 1.28.1 to 1.33.0 by @dependabot in https://github.com/k1LoW/octocov-go-test-bench/pull/26
+- Bump golang.org/x/net from 0.19.0 to 0.23.0 by @dependabot in https://github.com/k1LoW/octocov-go-test-bench/pull/27
+
 ## [v1.3.1](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.3.0...v1.3.1) - 2023-10-12
 ### Other Changes
 - Bump golang.org/x/net from 0.14.0 to 0.17.0 by @dependabot in https://github.com/k1LoW/octocov-go-test-bench/pull/21
