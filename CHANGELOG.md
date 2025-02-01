@@ -1,5 +1,9 @@
 # Changelog
 
+## [v1.4.1](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.4.0...v1.4.1) - 2025-02-01
+### Other Changes
+- chore(deps): bump the dependencies group with 3 updates by @dependabot in https://github.com/k1LoW/octocov-go-test-bench/pull/33
+
 ## [v1.4.0](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.3.1...v1.4.0) - 2025-01-01
 ### Other Changes
 - Bump golang.org/x/crypto from 0.14.0 to 0.17.0 by @dependabot in https://github.com/k1LoW/octocov-go-test-bench/pull/22
