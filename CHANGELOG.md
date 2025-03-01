@@ -1,5 +1,7 @@
 # Changelog
 
+## [v1.4.2](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.4.1...v1.4.2) - 2025-03-01
+
 ## [v1.4.1](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.4.0...v1.4.1) - 2025-02-01
 ### Other Changes
 - chore(deps): bump the dependencies group with 3 updates by @dependabot in https://github.com/k1LoW/octocov-go-test-bench/pull/33
