@@ -1,5 +1,9 @@
 # Changelog
 
+## [v1.5.0](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.4.2...v1.5.0) - 2025-03-13
+### Other Changes
+- chore(deps): bump golang.org/x/net from 0.35.0 to 0.36.0 by @dependabot in https://github.com/k1LoW/octocov-go-test-bench/pull/37
+
 ## [v1.4.2](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.4.1...v1.4.2) - 2025-03-01
 
 ## [v1.4.1](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.4.0...v1.4.1) - 2025-02-01
