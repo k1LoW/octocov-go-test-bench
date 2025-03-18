@@ -1,5 +1,9 @@
 # Changelog
 
+## [v1.6.0](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.5.0...v1.6.0) - 2025-03-18
+### Other Changes
+- chore(deps): bump github.com/expr-lang/expr from 1.16.9 to 1.17.0 by @dependabot in https://github.com/k1LoW/octocov-go-test-bench/pull/39
+
 ## [v1.5.0](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.4.2...v1.5.0) - 2025-03-13
 ### Other Changes
 - chore(deps): bump golang.org/x/net from 0.35.0 to 0.36.0 by @dependabot in https://github.com/k1LoW/octocov-go-test-bench/pull/37
