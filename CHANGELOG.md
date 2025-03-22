@@ -1,5 +1,9 @@
 # Changelog
 
+## [v1.6.1](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.6.0...v1.6.1) - 2025-03-22
+### Other Changes
+- chore(deps): bump github.com/golang-jwt/jwt/v4 from 4.5.1 to 4.5.2 by @dependabot in https://github.com/k1LoW/octocov-go-test-bench/pull/41
+
 ## [v1.6.0](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.5.0...v1.6.0) - 2025-03-18
 ### Other Changes
 - chore(deps): bump github.com/expr-lang/expr from 1.16.9 to 1.17.0 by @dependabot in https://github.com/k1LoW/octocov-go-test-bench/pull/39
