@@ -1,14 +1,15 @@
 module github.com/k1LoW/octocov-go-test-bench
 
 go 1.23.6
+toolchain go1.24.1
 
 require (
 	github.com/google/go-cmp v0.7.0
-	github.com/k1LoW/octocov v0.64.0
+	github.com/k1LoW/octocov v0.65.1
 	github.com/mattn/go-isatty v0.0.20
 	github.com/samber/lo v1.49.1
 	github.com/spf13/cobra v1.9.1
-	golang.org/x/tools v0.30.0
+	golang.org/x/tools v0.31.0
 )
 
 require (
@@ -38,7 +39,7 @@ require (
 	github.com/goark/errs v1.3.2 // indirect
 	github.com/goark/gnkf v0.7.8 // indirect
 	github.com/goccy/go-json v0.10.5 // indirect
-	github.com/goccy/go-yaml v1.15.23 // indirect
+	github.com/goccy/go-yaml v1.16.0 // indirect
 	github.com/golang-jwt/jwt/v4 v4.5.2 // indirect
 	github.com/golang/groupcache v0.0.0-20241129210726-2c02b8208cf8 // indirect
 	github.com/google/go-github/v67 v67.0.0 // indirect
@@ -50,7 +51,7 @@ require (
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/jbenet/go-context v0.0.0-20150711004518-d14ea06fba99 // indirect
 	github.com/k1LoW/duration v1.2.0 // indirect
-	github.com/k1LoW/expand v0.15.5 // indirect
+	github.com/k1LoW/expand v0.16.0 // indirect
 	github.com/k1LoW/go-github-actions v0.1.0 // indirect
 	github.com/k1LoW/go-github-client/v67 v67.0.13 // indirect
 	github.com/k1LoW/repin v0.3.4 // indirect
@@ -81,13 +82,13 @@ require (
 	github.com/xeipuuv/gojsonschema v1.2.0 // indirect
 	github.com/zhangyunhao116/fastrand v0.5.0 // indirect
 	github.com/zhangyunhao116/skipmap v0.10.1 // indirect
-	golang.org/x/crypto v0.35.0 // indirect
-	golang.org/x/net v0.36.0 // indirect
-	golang.org/x/oauth2 v0.27.0 // indirect
-	golang.org/x/sys v0.30.0 // indirect
-	golang.org/x/text v0.22.0 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20250227231956-55c901821b1e // indirect
-	google.golang.org/grpc v1.70.0 // indirect
+	golang.org/x/crypto v0.36.0 // indirect
+	golang.org/x/net v0.37.0 // indirect
+	golang.org/x/oauth2 v0.28.0 // indirect
+	golang.org/x/sys v0.31.0 // indirect
+	golang.org/x/text v0.23.0 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20250303144028-a0af3efb3deb // indirect
+	google.golang.org/grpc v1.71.0 // indirect
 	google.golang.org/protobuf v1.36.5 // indirect
 	gopkg.in/warnings.v0 v0.1.2 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
