@@ -45,7 +45,8 @@ archives:
     name_template: '{{ .ProjectName }}_v{{ .Version }}_{{ .Os }}_{{ .Arch }}{{ if .Arm }}v{{ .Arm }}{{ end }}'
     format_overrides:
       - goos: darwin
-        format: zip
+        formats:
+          - zip
     files:
       - LICENSE
       - CREDITS
