@@ -1,5 +1,10 @@
 # Changelog
 
+## [v1.7.0](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.6.1...v1.7.0) - 2025-04-18
+### Other Changes
+- chore(deps): bump golang.org/x/net from 0.36.0 to 0.38.0 by @dependabot in https://github.com/k1LoW/octocov-go-test-bench/pull/44
+- chore(deps): bump golang.org/x/tools from 0.31.0 to 0.32.0 in the dependencies group across 1 directory by @dependabot in https://github.com/k1LoW/octocov-go-test-bench/pull/46
+
 ## [v1.6.1](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.6.0...v1.6.1) - 2025-03-22
 ### Other Changes
 - chore(deps): bump github.com/golang-jwt/jwt/v4 from 4.5.1 to 4.5.2 by @dependabot in https://github.com/k1LoW/octocov-go-test-bench/pull/41
