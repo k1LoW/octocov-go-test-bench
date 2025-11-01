@@ -1,6 +1,6 @@
 # Changelog
 
-## [v1.7.1](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.7.0...v1.7.1) - 2025-10-24
+## [v1.7.1](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.7.0...v1.7.1) - 2025-11-01
 ### Other Changes
 - chore(deps): bump github.com/cli/go-gh/v2 from 2.11.2 to 2.12.1 by @dependabot[bot] in https://github.com/k1LoW/octocov-go-test-bench/pull/48
 - chore(deps): bump the dependencies group across 1 directory with 3 updates by @dependabot[bot] in https://github.com/k1LoW/octocov-go-test-bench/pull/50
@@ -8,6 +8,7 @@
 - chore: setup tagpr labels by @k1LoW in https://github.com/k1LoW/octocov-go-test-bench/pull/55
 - chore(deps): bump the dependencies group across 1 directory with 4 updates by @dependabot[bot] in https://github.com/k1LoW/octocov-go-test-bench/pull/54
 - chore(deps): bump actions/setup-go from 5 to 6 in the dependencies group by @dependabot[bot] in https://github.com/k1LoW/octocov-go-test-bench/pull/53
+- chore(deps): bump the dependencies group with 2 updates by @dependabot[bot] in https://github.com/k1LoW/octocov-go-test-bench/pull/56
 
 ## [v1.7.0](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.6.1...v1.7.0) - 2025-04-18
 ### Other Changes
