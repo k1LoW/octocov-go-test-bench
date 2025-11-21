@@ -1,5 +1,9 @@
 # Changelog
 
+## [v1.7.2](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.7.1...v1.7.2) - 2025-11-20
+### Other Changes
+- chore(deps): bump golang.org/x/crypto from 0.43.0 to 0.45.0 by @dependabot[bot] in https://github.com/k1LoW/octocov-go-test-bench/pull/58
+
 ## [v1.7.1](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.7.0...v1.7.1) - 2025-11-01
 ### Other Changes
 - chore(deps): bump github.com/cli/go-gh/v2 from 2.11.2 to 2.12.1 by @dependabot[bot] in https://github.com/k1LoW/octocov-go-test-bench/pull/48
