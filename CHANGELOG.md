@@ -1,5 +1,9 @@
 # Changelog
 
+## [v1.7.3](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.7.2...v1.7.3) - 2025-12-01
+### Other Changes
+- chore(deps): bump actions/checkout from 5 to 6 in the dependencies group by @dependabot[bot] in https://github.com/k1LoW/octocov-go-test-bench/pull/60
+
 ## [v1.7.2](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.7.1...v1.7.2) - 2025-11-20
 ### Other Changes
 - chore(deps): bump golang.org/x/crypto from 0.43.0 to 0.45.0 by @dependabot[bot] in https://github.com/k1LoW/octocov-go-test-bench/pull/58
