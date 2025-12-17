@@ -1,5 +1,11 @@
 # Changelog
 
+## [v1.7.3](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.7.2...v1.7.3) - 2025-12-17
+### Other Changes
+- chore(deps): bump actions/checkout from 5 to 6 in the dependencies group by @dependabot[bot] in https://github.com/k1LoW/octocov-go-test-bench/pull/60
+- chore(deps): bump github.com/expr-lang/expr from 1.17.6 to 1.17.7 by @dependabot[bot] in https://github.com/k1LoW/octocov-go-test-bench/pull/63
+- chore(deps): bump the dependencies group with 2 updates by @dependabot[bot] in https://github.com/k1LoW/octocov-go-test-bench/pull/61
+
 ## [v1.7.2](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.7.1...v1.7.2) - 2025-11-20
 ### Other Changes
 - chore(deps): bump golang.org/x/crypto from 0.43.0 to 0.45.0 by @dependabot[bot] in https://github.com/k1LoW/octocov-go-test-bench/pull/58
