@@ -1,5 +1,9 @@
 # Changelog
 
+## [v1.7.4](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.7.3...v1.7.4) - 2026-01-01
+### Other Changes
+- chore(deps): bump the dependencies group with 3 updates by @dependabot[bot] in https://github.com/k1LoW/octocov-go-test-bench/pull/64
+
 ## [v1.7.3](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.7.2...v1.7.3) - 2025-12-17
 ### Other Changes
 - chore(deps): bump actions/checkout from 5 to 6 in the dependencies group by @dependabot[bot] in https://github.com/k1LoW/octocov-go-test-bench/pull/60
