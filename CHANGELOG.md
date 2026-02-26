@@ -1,5 +1,9 @@
 # Changelog
 
+## [v1.7.5](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.7.4...v1.7.5) - 2026-02-26
+### Other Changes
+- chore(deps): bump github.com/cloudflare/circl from 1.6.1 to 1.6.3 by @dependabot[bot] in https://github.com/k1LoW/octocov-go-test-bench/pull/68
+
 ## [v1.7.4](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.7.3...v1.7.4) - 2026-02-10
 ### Other Changes
 - chore(deps): bump the dependencies group with 3 updates by @dependabot[bot] in https://github.com/k1LoW/octocov-go-test-bench/pull/64
