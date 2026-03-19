@@ -1,5 +1,11 @@
 # Changelog
 
+## [v1.7.6](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.7.5...v1.7.6) - 2026-03-19
+### Other Changes
+- chore(deps): bump the dependencies group with 2 updates by @dependabot[bot] in https://github.com/k1LoW/octocov-go-test-bench/pull/71
+- chore(deps): bump goreleaser/goreleaser-action from 6 to 7 in the dependencies group by @dependabot[bot] in https://github.com/k1LoW/octocov-go-test-bench/pull/70
+- chore(deps): bump google.golang.org/grpc from 1.78.0 to 1.79.3 by @dependabot[bot] in https://github.com/k1LoW/octocov-go-test-bench/pull/73
+
 ## [v1.7.5](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.7.4...v1.7.5) - 2026-02-26
 ### Other Changes
 - chore(deps): bump github.com/cloudflare/circl from 1.6.1 to 1.6.3 by @dependabot[bot] in https://github.com/k1LoW/octocov-go-test-bench/pull/68
