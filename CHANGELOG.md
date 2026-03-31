@@ -3,6 +3,11 @@
 ## [v1.7.7](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.7.6...v1.7.7) - 2026-03-31
 ### Other Changes
 - chore(deps): bump github.com/go-git/go-git/v5 from 5.16.5 to 5.17.1 by @dependabot[bot] in https://github.com/k1LoW/octocov-go-test-bench/pull/74
+- Release for v1.7.7 by @github-actions[bot] in https://github.com/k1LoW/octocov-go-test-bench/pull/76
+
+## [v1.7.7](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.7.6...v1.7.7) - 2026-03-31
+### Other Changes
+- chore(deps): bump github.com/go-git/go-git/v5 from 5.16.5 to 5.17.1 by @dependabot[bot] in https://github.com/k1LoW/octocov-go-test-bench/pull/74
 
 ## [v1.7.7](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.7.6...v1.7.7) - 2026-03-31
 ### Other Changes
