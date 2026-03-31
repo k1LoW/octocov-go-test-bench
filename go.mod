@@ -34,8 +34,8 @@ require (
 	github.com/go-enry/go-enry/v2 v2.9.4 // indirect
 	github.com/go-enry/go-oniguruma v1.2.1 // indirect
 	github.com/go-git/gcfg v1.5.1-0.20230307220236-3a3c6141e376 // indirect
-	github.com/go-git/go-billy/v5 v5.6.2 // indirect
-	github.com/go-git/go-git/v5 v5.16.5 // indirect
+	github.com/go-git/go-billy/v5 v5.8.0 // indirect
+	github.com/go-git/go-git/v5 v5.17.1 // indirect
 	github.com/goark/errs v1.3.2 // indirect
 	github.com/goark/gnkf v0.7.9 // indirect
 	github.com/goccy/go-json v0.10.5 // indirect
