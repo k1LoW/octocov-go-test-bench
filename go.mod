@@ -1,14 +1,14 @@
 module github.com/k1LoW/octocov-go-test-bench
 
-go 1.24.13
+go 1.25.8
 
 require (
 	github.com/google/go-cmp v0.7.0
-	github.com/k1LoW/octocov v0.74.6
+	github.com/k1LoW/octocov v0.75.5
 	github.com/mattn/go-isatty v0.0.20
-	github.com/samber/lo v1.52.0
+	github.com/samber/lo v1.53.0
 	github.com/spf13/cobra v1.10.2
-	golang.org/x/tools v0.42.0
+	golang.org/x/tools v0.43.0
 )
 
 require (
@@ -31,14 +31,14 @@ require (
 	github.com/emirpasic/gods v1.18.1 // indirect
 	github.com/expr-lang/expr v1.17.8 // indirect
 	github.com/fatih/color v1.18.0 // indirect
-	github.com/go-enry/go-enry/v2 v2.9.4 // indirect
+	github.com/go-enry/go-enry/v2 v2.9.5 // indirect
 	github.com/go-enry/go-oniguruma v1.2.1 // indirect
 	github.com/go-git/gcfg v1.5.1-0.20230307220236-3a3c6141e376 // indirect
 	github.com/go-git/go-billy/v5 v5.8.0 // indirect
 	github.com/go-git/go-git/v5 v5.17.1 // indirect
 	github.com/goark/errs v1.3.2 // indirect
 	github.com/goark/gnkf v0.7.9 // indirect
-	github.com/goccy/go-json v0.10.5 // indirect
+	github.com/goccy/go-json v0.10.6 // indirect
 	github.com/goccy/go-yaml v1.19.2 // indirect
 	github.com/golang-jwt/jwt/v4 v4.5.2 // indirect
 	github.com/golang/groupcache v0.0.0-20241129210726-2c02b8208cf8 // indirect
@@ -49,7 +49,7 @@ require (
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/jbenet/go-context v0.0.0-20150711004518-d14ea06fba99 // indirect
 	github.com/k1LoW/duration v1.2.0 // indirect
-	github.com/k1LoW/errors v1.1.1 // indirect
+	github.com/k1LoW/errors v1.2.0 // indirect
 	github.com/k1LoW/expand v0.16.7 // indirect
 	github.com/k1LoW/go-github-actions v0.2.0 // indirect
 	github.com/k1LoW/go-github-client/v67 v67.0.21 // indirect
@@ -83,12 +83,12 @@ require (
 	github.com/xeipuuv/gojsonschema v1.2.0 // indirect
 	github.com/zhangyunhao116/fastrand v0.5.0 // indirect
 	github.com/zhangyunhao116/skipmap v0.10.1 // indirect
-	golang.org/x/crypto v0.48.0 // indirect
-	golang.org/x/net v0.50.0 // indirect
-	golang.org/x/oauth2 v0.35.0 // indirect
-	golang.org/x/sys v0.41.0 // indirect
-	golang.org/x/text v0.34.0 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20260203192932-546029d2fa20 // indirect
+	golang.org/x/crypto v0.49.0 // indirect
+	golang.org/x/net v0.52.0 // indirect
+	golang.org/x/oauth2 v0.36.0 // indirect
+	golang.org/x/sys v0.42.0 // indirect
+	golang.org/x/text v0.35.0 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20260226221140-a57be14db171 // indirect
 	google.golang.org/grpc v1.79.3 // indirect
 	google.golang.org/protobuf v1.36.11 // indirect
 	gopkg.in/warnings.v0 v0.1.2 // indirect
