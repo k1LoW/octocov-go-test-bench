@@ -1,5 +1,9 @@
 # Changelog
 
+## [v1.7.9](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.7.8...v1.7.9) - 2026-05-12
+### Other Changes
+- chore(deps): bump the dependencies group across 1 directory with 3 updates by @dependabot[bot] in https://github.com/k1LoW/octocov-go-test-bench/pull/81
+
 ## [v1.7.8](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.7.7...v1.7.8) - 2026-05-12
 ### Other Changes
 - chore(deps): bump github.com/go-git/go-git/v5 from 5.17.1 to 5.18.0 by @dependabot[bot] in https://github.com/k1LoW/octocov-go-test-bench/pull/79
