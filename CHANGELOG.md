@@ -1,5 +1,14 @@
 # Changelog
 
+## [v1.7.11](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.7.10...v1.7.11) - 2026-09-29
+
+### Other Changes
+- chore(deps): bump google.golang.org/grpc from 1.80.0 to 1.82.1 by @dependabot[bot] in https://github.com/k1LoW/octocov-go-test-bench/pull/89
+- ci: generate CREDITS with gocredits v1.0.0 from a make target by @k1LoW in https://github.com/k1LoW/octocov-go-test-bench/pull/95
+- chore(deps): bump actions/setup-go from 6 to 7 in the dependencies group by @dependabot[bot] in https://github.com/k1LoW/octocov-go-test-bench/pull/91
+- chore(deps): bump google.golang.org/grpc from 1.82.1 to 1.83.1 by @dependabot[bot] in https://github.com/k1LoW/octocov-go-test-bench/pull/94
+- chore(deps): bump the dependencies group across 1 directory with 3 updates by @dependabot[bot] in https://github.com/k1LoW/octocov-go-test-bench/pull/92
+
 ## [v1.7.10](https://github.com/k1LoW/octocov-go-test-bench/compare/v1.7.9...v1.7.10) - 2026-06-30
 
 ### Other Changes
